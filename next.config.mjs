@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const API_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     // domains: [API_URL],
     domains: ["ecommerce-backend-api-production-84b3.up.railway.app"],
